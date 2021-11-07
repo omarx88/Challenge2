@@ -247,27 +247,111 @@ footer div ul li a {
 }
 
 /* Media Query for 768 */
-
 @media screen and (max-width: 768px) {
-    .hero {
-        background-position: -300px;
-    }
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
 
-    .container {
-        padding: 94% 20px 75px 25px;
-    }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .container .box p {
+    font-size: 12px;
+  }
+
+  .hero-pic, .container {
+      width: 100%;
+
+  }
+  .container .box {
+      height: 250px;
+      background-color: ghostwhite;
+  }
+
+  .container .box h3 {
+      font-size: 20px;
+      color:#0164f9;
+  }
+
+  .hero-pic {
+      text-align:center;
+      margin: 5% 5% -39% 47%;
+  }
+
+  .hero p {
+      text-align:center;
+      margin: -1px -4%;
+      padding: 6%;
+  }
+  .hero h2 {
+      font-size: 40px;
+  }
 } 
 
 /* Media Query for 575 */
 
 @media screen and (max-width: 575px) {
-        
+    .hero {
+        background-position: none;
+    }
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+    
+      .container .box p {
+        font-size: 12px;
+      }
 
-        .hero {
-            background-position: -300px;
-        }
+      .hero-pic, .container {
+          width: 100%;
 
-        .container {
-            padding: 94% 20px 75px 25px;
-        }
+      }
+      .container .box {
+          height: 250px;
+          background-color: ghostwhite;
+      }
+
+      .container .box h3 {
+          font-size: 20px;
+          color:#0164f9;
+      }
+
+      .hero-pic {
+          text-align:center;
+          margin: 5% 5% -39% 47%;
+      }
+
+      .hero p {
+          text-align:center;
+          margin: -1px -4%;
+          padding: 6%;
+      }
+      .hero h2 {
+          font-size: 40px;
+      }
 }
