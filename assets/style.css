@@ -218,10 +218,12 @@ footer div ul li a {
         font-size: 12px;
       }
 
+    
       .hero-pic, .container {
-          width: 100%;
-
+          width: 50%;
+          margin: 0 100% 0 40%;
       }
+
       .container .box {
           height: 250px;
           background-color: ghostwhite;
@@ -232,6 +234,10 @@ footer div ul li a {
           color:#0164f9;
       }
 
+      .hero {
+          background-position: inherit;
+      }
+      
       .hero-pic {
           text-align:center;
           margin: 5% 5% -39% 47%;
