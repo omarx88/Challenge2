@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #578db6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+
+header {
+    padding: 20px 35px;
+    background-color: #578db6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    /*
+    background-image: url(../Photos/PXL_20210102_214411299.PORTRAIT.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%; */
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: #ffffcc;
+    text-shadow: 0 0 15px rgba(5, 33, 240, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color:#ffffcc;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* Header END */
+
+/* footer */
+footer {
+    background-color: #578db6;
+    width: 100%;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #f4ff00;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 23px;
+}
+
+footer div ul li a {
+    color: #f4ff00;
+}
+
+/* Hero Section START */
+.hero-pic {
+    border-radius: 26px;
+    background: #ffffff;
+    padding: 20px;
+    width: 32%;
+    height: 340px;
+    margin: 10% -27% -28% 39%;
+    border-color: black;
+}
+
+
+.hero {
+    background-image: url("../Photos/PXL_20210102_214411299.PORTRAIT.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.hero h2 {
+    text-align:center;
+    padding: 25px;
+    margin: 0%;
+    text-decoration-style: underline;
+}
+
+.hero p{
+    text-align:center;
+    margin: 7px 15%;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    grid-gap: 20px;
+    padding: 700px 20px 150px 20px;
+}
+
+.container .box {
+    position: relative;
+    height: 360px;
+    box-shadow: 0 30px 30px rgba(95, 95, 99, 0.35);
+    overflow:hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .box::before{
+    position: absolute;
+    content:"";
+    top:99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d24f3;
+    background-image: linear-gradient(315deg, #6b6b6b 0%, rgb(0, 17, 255));
+    transition: 0.4s;
+}
+
+.box:hover {
+    transform: scale(0.90);
+}
+
+.container .box:hover::before{
+    top:50%
+}
+
+.container .box .imgbox{
+    width: 100%;
+    height: 50%;
+}
+
+.container .box .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box h3{
+    font-size: 40px;
+    position: relative;
+    padding: 15px 0px 0px 0px;
+    color: black;
+    
+}
+
+.container .box:hover h3{
+    color:white;
+}
+
+.container .box p{
+    font-size: 18px;
+    position: relative;
+}
+
+.container .box:hover p{
+    color: white;
+}
+
+/* HERO END */
+
+/* Media Query for 980 */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+    
+      .container .box p {
+        font-size: 12px;
+      }
+
+      .hero-pic, .container {
+          width: 100%;
+
+      }
+      .container .box {
+          height: 250px;
+          background-color: ghostwhite;
+      }
+
+      .container .box h3 {
+          font-size: 20px;
+          color:#0164f9;
+      }
+
+      .hero-pic {
+          text-align:center;
+          margin: 5% 5% -39% 47%;
+      }
+
+      .hero p {
+          text-align:center;
+          margin: -1px -4%;
+          padding: 6%;
+      }
+      .hero h2 {
+          font-size: 40px;
+      }
+}
+
+/* Media Query for 768 */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-position: -300px;
+    }
+
+    .container {
+        padding: 94% 20px 75px 25px;
+    }
+} 
+
+/* Media Query for 575 */
+
+@media screen and (max-width: 575px) {
+        
+
+        .hero {
+            background-position: -300px;
+        }
+
+        .container {
+            padding: 94% 20px 75px 25px;
+        }
+}
