@@ -237,10 +237,11 @@ footer div ul li a {
       .hero {
           background-position: inherit;
       }
-      
+
       .hero-pic {
           text-align:center;
           margin: 5% 5% -39% 47%;
+          height: 275px;
       }
 
       .hero p {
@@ -251,4 +252,10 @@ footer div ul li a {
       .hero h2 {
           font-size: 40px;
       }
+}
+
+@media (max-width: 475px) {
+    body {
+        background-image: url(../Photos/Background\ 475px.jpg);
+    }
 }
